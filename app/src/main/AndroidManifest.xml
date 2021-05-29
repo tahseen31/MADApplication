@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_th_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NUMAD21SuTahseenHameed">
+        <activity android:name=".ButtonActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
