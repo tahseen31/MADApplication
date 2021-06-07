@@ -47,7 +47,6 @@ public class Links extends AppCompatActivity {
         });
     }
 
-    // creates the view
     private void createRecyclerView() {
 
         rLayoutManager = new LinearLayoutManager(this);
@@ -84,7 +83,6 @@ public class Links extends AppCompatActivity {
 
     }
 
-    // creates the popup to populate the list with inputted links
     private void callDialog(int pos){
         Dialog popup = new Dialog(this);
         popup.setContentView(R.layout.link_popup);
@@ -108,13 +106,12 @@ public class Links extends AppCompatActivity {
 
     }
 
-    // Adds another link to the list
     private void addLink(int position, String name, String link) {
         Items n = new Items(name, link);
 
 
         linkList.add(position, n);
-        //Toast.makeText(getApplicationContext(), "Add an item", Toast.LENGTH_SHORT).show();
+
 
         adapter.notifyItemInserted(position);
 
