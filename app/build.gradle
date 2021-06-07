@@ -3,6 +3,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('C:\\CS5520\\MADApplication\\key_new')
+            storePassword 'keyTash123'
+            keyAlias 'keyTash'
+            keyPassword 'keyTash123'
+        }
+    }
     compileSdkVersion 30
 
     defaultConfig {
@@ -19,6 +27,8 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable true
+            signingConfig signingConfigs.release
         }
     }
     compileOptions {
