@@ -16,6 +16,12 @@
     <string name="cancel">Cancel</string>
 
     <string name="add_link">Add link</string>
+    <string name="string_enter_email">Enter email address</string>
+    <string name="string_search">Search</string>
+    <string name="string_web_service">Web Service</string>
+    <string name="web_service_description">Play Cards with your friends! Draw a card or ask your friends to pick one for you!</string>
+    <string name="string_draw_card">Draw A Card From the Deck</string>
+    <string name="shuffle_a_deck">Shuffle a Deck</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
