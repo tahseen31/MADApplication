@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button clickyButton;
     Button linksButton;
     Button locationButton;
+    Button webApiButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +26,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         clickyButton = findViewById(R.id.clickyButton);
         linksButton = findViewById(R.id.button_links);
         locationButton = findViewById(R.id.button_location);
+        webApiButton = findViewById(R.id.webAPI);
 
         aboutButton.setOnClickListener(this);
         clickyButton.setOnClickListener(this);
         linksButton.setOnClickListener(this);
         locationButton.setOnClickListener(this);
+        webApiButton.setOnClickListener(this);
 
     }
 
@@ -49,13 +52,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(MainActivity.this, ButtonActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.button_links:
-                intent = new Intent(MainActivity.this, Links.class);
-                startActivity(intent);
+            case  R.id.button_links:
+                Intent intentURL = new Intent(MainActivity.this, link.class);
+                startActivity(intentURL);
                 break;
             case R.id.button_location:
-                intent = new Intent(MainActivity.this, LocationActivity.class);
-                startActivity(intent);
+                Intent intentLoc = new Intent(MainActivity.this, LocationActivity.class);
+                startActivity(intentLoc);
+                break;
+            case R.id.webAPI:
+                Intent intentAPI = new Intent(MainActivity.this, WebService.class);
+                startActivity(intentAPI);
                 break;
         }
 

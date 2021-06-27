@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.neu.madcourse.numad21su_tahseenhameed">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -12,7 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_th_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NUMAD21SuTahseenHameed">
-        <activity android:name=".LocationActivity"></activity>
+        <activity android:name=".WebService"></activity>
+        <activity android:name=".WebAPI" />
+        <activity android:name=".link" />
+        <activity android:name=".LocationActivity" />
         <activity android:name=".ButtonActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
